@@ -1,0 +1,18 @@
+{
+  "name": "farhan-tanvir-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website of Farhan Tanvir - Web Developer & UI/UX Designer",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "portfolio",
+    "web-developer",
+    "ui-ux-designer",
+    "farhan-tanvir",
+    "frontend"
+  ],
+  "author": "Farhan Tanvir",
+  "license": "MIT"
+}

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farhan Tanvir | Web Developer & UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Farhan Tanvir - Web Developer & UI/UX Designer helping founders and teams launch websites that look sharp, load fast, and turn visitors into clients.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23FF5A1F'/><text x='50%' y='68%' font-size='60' font-weight='bold' fill='%23FFFFFF' font-family='sans-serif' text-anchor='middle'>FT</text></svg>">
+  
+  <!-- Google Fonts: Oswald (Headings) & Plus Jakarta Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Floating Header & Navigation -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <!-- Logo / Brand -->
+      <a href="#home" class="brand-logo" aria-label="Farhan Tanvir Home">
+        FARHAN TANVIR<span class="dot">.</span>
+      </a>
+
+      <!-- Center Pill Navigation -->
+      <nav class="pill-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active">Home/About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials" class="nav-link">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link">Home/About</a></li>
+        <li><a href="#portfolio" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#testimonials" class="mobile-nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SEGMENT -->
+    <section class="hero-section" id="home">
+      <!-- Massive Background Typography -->
+      <div class="hero-bg-text" aria-hidden="true">
+        <span class="bg-sub">HI, I AM</span>
+        <span class="bg-name">FARHAN TANVIR</span>
+      </div>
+
+      <!-- Ambient Glow Behind Hero Portrait -->
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="hero-container">
+        <!-- Hero Left Column: Headline, Subtitle, CTA -->
+        <div class="hero-content">
+          <span class="hero-trusted-tag">TRUSTED BY 200+ CLIENTS</span>
+          <h1 class="hero-title">
+            WEBSITES THAT TURN<br>
+            VISITORS INTO CLIENTS
+          </h1>
+          <p class="hero-subtitle">Web Developer &amp; UI/UX Designer</p>
+          <div class="hero-actions">
+            <a href="#portfolio" class="btn-dark-pill">
+              View My Work <span class="btn-icon">↘</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Center: Developer Portrait Photo -->
+        <div class="hero-visual">
+          <div class="portrait-wrapper">
+            <img 
+              src="assets/images/hero-person.png" 
+              alt="Farhan Tanvir - Web Developer & UI/UX Designer" 
+              class="hero-portrait"
+              loading="eager"
+            >
+          </div>
+        </div>
+
+        <!-- Hero Right Column Spacer (clean empty space replacing removed box) -->
+        <div class="hero-right-spacer" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SEGMENT -->
+    <section class="about-section" id="about">
+      <div class="section-container">
+        <!-- Section Header Tag with Line -->
+        <div class="section-tag-row">
+          <span class="diamond-icon">◆</span>
+          <span class="section-tag-text">ABOUT ME</span>
+          <div class="tag-divider-line"></div>
+        </div>
+
+        <!-- Big About Statement -->
+        <div class="about-statement-wrapper">
+          <h2 class="about-statement">
+            I'M FARHAN TANVIR, A WEB DEVELOPER &amp; UI/UX DESIGNER HELPING FOUNDERS AND TEAMS LAUNCH WEBSITES THAT <span class="text-orange">LOOK SHARP, LOAD FAST</span> AND QUIETLY TURN VISITORS INTO PAYING CLIENTS.
+          </h2>
+          <div class="about-actions">
+            <a href="#contact" class="btn-orange-pill">
+              More About Me <span class="btn-icon">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- TRUSTED BY TEAMS AT - Infinite Slow Marquee -->
+        <div class="trusted-ticker-wrapper">
+          <p class="trusted-heading">TRUSTED BY TEAMS AT</p>
+          <div class="marquee-track" aria-label="Trusted companies">
+            <div class="marquee-content">
+              <span class="ticker-item">InfoGram</span>
+              <span class="ticker-star">✦</span>
+              <span class="ticker-item">JhalMuri News</span>
+              <span class="ticker-star">✦</span>
+              <span class="ticker-item">Hult Prize at DU</span>
+              <span class="ticker-star">✦</span>
+              <span class="ticker-item">Voice of Business</span>
+              <span class="ticker-star">✦</span>
+              <span class="ticker-item">Travel Duniya</span>
+              <span class="ticker-star">✦</span>
+            </div>
+            <!-- Duplicate for seamless infinite loop -->
+            <div class="marquee-content" aria-hidden="true">
+              <span class="ticker-item">InfoGram</span>
+              <span class="ticker-star">✦</span>
+              <span class="ticker-item">JhalMuri News</span>
+              <span class="ticker-star">✦</span>
+              <span class="ticker-item">Hult Prize at DU</span>
+              <span class="ticker-star">✦</span>
+              <span class="ticker-item">Voice of Business</span>
+              <span class="ticker-star">✦</span>
+              <span class="ticker-item">Travel Duniya</span>
+              <span class="ticker-star">✦</span>
+            </div>
+            <!-- Third copy for extra-wide displays -->
+            <div class="marquee-content" aria-hidden="true">
+              <span class="ticker-item">InfoGram</span>
+              <span class="ticker-star">✦</span>
+              <span class="ticker-item">JhalMuri News</span>
+              <span class="ticker-star">✦</span>
+              <span class="ticker-item">Hult Prize at DU</span>
+              <span class="ticker-star">✦</span>
+              <span class="ticker-item">Voice of Business</span>
+              <span class="ticker-star">✦</span>
+              <span class="ticker-item">Travel Duniya</span>
+              <span class="ticker-star">✦</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SEGMENT -->
+    <section class="portfolio-section" id="portfolio">
+      <div class="section-container">
+        <!-- Section Header Tag with Line -->
+        <div class="section-tag-row">
+          <span class="diamond-icon">◆</span>
+          <span class="section-tag-text">PORTFOLIO</span>
+          <div class="tag-divider-line"></div>
+        </div>
+
+        <!-- Portfolio Title & Top Action -->
+        <div class="section-title-row">
+          <h2 class="section-title">
+            SELECTED WORK THAT<br>
+            <span class="text-orange">DELIVERS RESULTS</span>
+          </h2>
+          <a href="#portfolio-grid" class="btn-dark-pill">
+            View All Projects <span class="btn-icon">↘</span>
+          </a>
+        </div>
+
+        <!-- Project Grid (2x2 Cards) -->
+        <div class="portfolio-grid" id="portfolio-grid">
+          <!-- Card 1: Atlas Legal Partners -->
+          <article class="project-card" data-project="atlas-legal">
+            <div class="card-image-box">
+              <img 
+                src="assets/images/project-atlas-legal.png" 
+                alt="Atlas Legal Partners website mockup preview" 
+                class="card-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="card-meta">
+              <div class="card-title-row">
+                <h3 class="card-title">ATLAS LEGAL PARTNERS</h3>
+                <span class="badge-pill">Web Design</span>
+              </div>
+              <p class="card-desc">
+                A confident, authority-first website for a boutique corporate law firm.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 2: Trava Travel Platform -->
+          <article class="project-card" data-project="trava">
+            <div class="card-image-box">
+              <img 
+                src="assets/images/project-trava.png" 
+                alt="Trava Travel Platform website mockup preview" 
+                class="card-img"
+                loading="lazy"
+              >
+              <!-- Floating Orange Arrow Button -->
+              <div class="floating-card-btn" aria-label="View Trava project details">
+                <span class="floating-arrow">↗</span>
+              </div>
+            </div>
+            <div class="card-meta">
+              <div class="card-title-row">
+                <h3 class="card-title">TRAVA TRAVEL PLATFORM</h3>
+                <span class="badge-pill">Web Development</span>
+              </div>
+              <p class="card-desc">
+                An immersive booking experience that makes planning a trip feel like the trip itself.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 3: Ledgerly Finance Dashboard -->
+          <article class="project-card" data-project="ledgerly">
+            <div class="card-image-box">
+              <img 
+                src="assets/images/project-ledgerly.png" 
+                alt="Ledgerly Finance Dashboard analytics mockup preview" 
+                class="card-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="card-meta">
+              <div class="card-title-row">
+                <h3 class="card-title">LEDGERLY FINANCE DASHBOARD</h3>
+                <span class="badge-pill">UI/UX Design</span>
+              </div>
+              <p class="card-desc">
+                A calm, data-dense analytics dashboard for modern finance teams.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 4: Maison Nord Store -->
+          <article class="project-card" data-project="maison-nord">
+            <div class="card-image-box">
+              <img 
+                src="assets/images/project-maison-nord.png" 
+                alt="Maison Nord Store e-commerce fashion mockup preview" 
+                class="card-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="card-meta">
+              <div class="card-title-row">
+                <h3 class="card-title">MAISON NORD STORE</h3>
+                <span class="badge-pill">E-commerce</span>
+              </div>
+              <p class="card-desc">
+                A minimalist fashion storefront with editorial product storytelling.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Center Bottom Action -->
+        <div class="portfolio-bottom-action">
+          <button type="button" class="btn-orange-pill open-contact-btn">
+            View All Projects <span class="btn-icon">↗</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SEGMENT -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="section-container">
+        <!-- Section Header Tag with Line -->
+        <div class="section-tag-row">
+          <span class="diamond-icon">◆</span>
+          <span class="section-tag-text">TESTIMONIALS</span>
+          <div class="tag-divider-line"></div>
+        </div>
+
+        <!-- Testimonials Title & Action -->
+        <div class="section-title-row">
+          <h2 class="section-title">KIND WORDS FROM CLIENTS</h2>
+          <a href="#testimonials-grid" class="btn-dark-pill">
+            Read All Reviews <span class="btn-icon">↘</span>
+          </a>
+        </div>
+
+        <!-- 3 Testimonial Cards -->
+        <div class="testimonials-grid" id="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="stars-row" aria-label="5 stars rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              "Farhan took a messy brief and turned it into the best-performing version of our site to date. Bookings went up in the first week and our team actually enjoys updating content now."
+            </blockquote>
+            <div class="testimonial-author">
+              <img 
+                src="assets/images/avatar-sofia.png" 
+                alt="Sofia Lindqvist" 
+                class="author-avatar"
+                loading="lazy"
+              >
+              <div class="author-info">
+                <span class="author-name">Sofia Lindqvist</span>
+                <span class="author-role">Co-founder, Trava</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="stars-row" aria-label="5 stars rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              "Our old site looked like every other law firm. The new one feels like us — confident and precise. Consultation requests nearly tripled within two months."
+            </blockquote>
+            <div class="testimonial-author">
+              <img 
+                src="assets/images/avatar-marcus.png" 
+                alt="Marcus Hale" 
+                class="author-avatar"
+                loading="lazy"
+              >
+              <div class="author-info">
+                <span class="author-name">Marcus Hale</span>
+                <span class="author-role">Managing Partner, Atlas Legal</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="stars-row" aria-label="5 stars rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              "Rare combination of product thinking and visual craft. The dashboard redesign cut our support tickets around reporting by more than a third."
+            </blockquote>
+            <div class="testimonial-author">
+              <img 
+                src="assets/images/avatar-mei.png" 
+                alt="Mei Tanaka" 
+                class="author-avatar"
+                loading="lazy"
+              >
+              <div class="author-info">
+                <span class="author-name">Mei Tanaka</span>
+                <span class="author-role">Head of Product, Ledgerly</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANIFESTO / STATEMENT SEGMENT -->
+    <section class="manifesto-section">
+      <div class="section-container manifesto-container">
+        <div class="manifesto-diamond" aria-hidden="true">◆</div>
+        <h2 class="manifesto-heading">
+          I STRIVE TO PAY ATTENTION<br>
+          TO THE <span class="text-orange">SMALLEST DETAILS</span>
+        </h2>
+        <p class="manifesto-desc">
+          From the first discovery call to the last pixel on launch day, every decision is made to help your business grow.
+        </p>
+        <button type="button" class="btn-orange-pill open-contact-btn">
+          Start a Project <span class="btn-icon">↗</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER / CTA SEGMENT -->
+  <footer class="site-footer" id="contact">
+    <div class="section-container">
+      <div class="footer-cta-row">
+        <!-- Huge CTA Title -->
+        <div class="footer-title-box">
+          <h2 class="footer-cta-heading">
+            LET'S WORK<br>
+            <span class="text-orange">TOGETHER</span>
+          </h2>
+        </div>
+
+        <!-- Contact Actions -->
+        <div class="footer-contact-box">
+          <div class="email-copy-wrapper">
+            <a href="mailto:hello@farhantanvir.design" class="footer-email-link" id="emailLink">
+              hello@farhantanvir.design
+            </a>
+            <button type="button" class="copy-email-btn" id="copyEmailBtn" title="Copy email address" aria-label="Copy email address">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+            <span class="copy-tooltip" id="copyTooltip">Copied!</span>
+          </div>
+
+          <div class="footer-btn-wrapper">
+            <button type="button" class="btn-orange-pill open-contact-btn">
+              Start a Project <span class="btn-icon">↗</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar: Copyright & Social Links -->
+      <div class="footer-bottom-bar">
+        <div class="footer-copyright">
+          © 2026 FARHAN TANVIR. ALL RIGHTS RESERVED.
+        </div>
+        <div class="footer-social-links">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-link">Twitter/X</a>
+          <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="social-link">Dribbble</a>
+        </div>
+        <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top of page">
+          Back to Top ↑
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INTERACTIVE MODAL: START A PROJECT / CONTACT -->
+  <div class="modal-backdrop" id="contactModal" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button type="button" class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">✕</button>
+      
+      <div class="modal-header">
+        <span class="diamond-icon">◆</span>
+        <h3 class="modal-title" id="modalTitle">START A PROJECT</h3>
+        <p class="modal-subtitle">Tell me about your goals, timeline, and vision. I usually respond within 24 hours.</p>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="clientName">Your Name</label>
+          <input type="text" id="clientName" name="name" required placeholder="e.g. John Doe">
+        </div>
+
+        <div class="form-group">
+          <label for="clientEmail">Email Address</label>
+          <input type="email" id="clientEmail" name="email" required placeholder="john@company.com">
+        </div>
+
+        <div class="form-group">
+          <label for="projectType">What are you looking to build?</label>
+          <select id="projectType" name="projectType">
+            <option value="web-development">Web Development</option>
+            <option value="ui-ux-design">UI/UX Design &amp; Prototyping</option>
+            <option value="full-portfolio">Landing Page / Marketing Site</option>
+            <option value="ecommerce">E-commerce Platform</option>
+            <option value="custom">Other / Custom Project</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="projectMessage">Project Overview &amp; Timeline</label>
+          <textarea id="projectMessage" name="message" rows="4" required placeholder="Briefly describe what you need, your target launch date, and any links..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-orange-pill form-submit-btn">
+          Send Message <span class="btn-icon">↗</span>
+        </button>
+      </form>
+
+      <div class="form-success-message" id="formSuccessMessage">
+        <div class="success-icon">✓</div>
+        <h4>Thank you!</h4>
+        <p>Your message has been sent. Farhan will review your inquiry and get back to you shortly.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE PROJECT CASE STUDY MODAL -->
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true">
+    <div class="modal-dialog project-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+      <button type="button" class="modal-close-btn" id="closeProjectModalBtn" aria-label="Close project modal">✕</button>
+      
+      <div class="project-modal-body" id="projectModalBody">
+        <!-- Populated dynamically via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
