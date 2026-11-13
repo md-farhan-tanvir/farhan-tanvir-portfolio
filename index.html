@@ -420,7 +420,10 @@
 
   <!-- FOOTER / CTA SEGMENT -->
   <footer class="site-footer" id="contact">
-    <div class="section-container">
+    <!-- Ambient Glow at bottom center -->
+    <div class="footer-ambient-glow" aria-hidden="true"></div>
+
+    <div class="section-container footer-container">
       <div class="footer-cta-row">
         <!-- Huge CTA Title -->
         <div class="footer-title-box">
@@ -453,20 +456,62 @@
         </div>
       </div>
 
-      <!-- Bottom Bar: Copyright & Social Links -->
+      <!-- Thin Horizontal Divider Line -->
+      <div class="footer-divider-line"></div>
+
+      <!-- Multi-Column Links Section -->
+      <div class="footer-columns-grid">
+        <!-- Brand & Description Column -->
+        <div class="footer-brand-col">
+          <a href="#home" class="footer-brand-logo" aria-label="Farhan Tanvir">
+            FARHAN TANVIR<span class="dot">.</span>
+          </a>
+          <p class="footer-brand-bio">
+            Independent web developer and UI/UX designer crafting fast, conversion-focused websites for ambitious brands, founders and agencies.
+          </p>
+        </div>
+
+        <!-- Pages Column -->
+        <div class="footer-nav-col">
+          <span class="footer-col-heading">PAGES</span>
+          <div class="footer-subcol-group">
+            <ul class="footer-link-list">
+              <li><a href="#home" class="footer-nav-item">Home</a></li>
+              <li><a href="#portfolio" class="footer-nav-item">Projects</a></li>
+              <li><a href="#testimonials" class="footer-nav-item">Testimonials</a></li>
+            </ul>
+            <ul class="footer-link-list">
+              <li><a href="#about" class="footer-nav-item">About</a></li>
+              <li><a href="#contact" class="footer-nav-item">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Socials Column -->
+        <div class="footer-nav-col">
+          <span class="footer-col-heading">SOCIALS</span>
+          <div class="footer-subcol-group">
+            <ul class="footer-link-list">
+              <li><a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="footer-nav-item">Dribbble</a></li>
+              <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-nav-item">LinkedIn</a></li>
+              <li><a href="https://github.com/md-farhan-tanvir" target="_blank" rel="noopener noreferrer" class="footer-nav-item">GitHub</a></li>
+            </ul>
+            <ul class="footer-link-list">
+              <li><a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="footer-nav-item">Behance</a></li>
+              <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-nav-item">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar: Copyright & Attribution -->
       <div class="footer-bottom-bar">
         <div class="footer-copyright">
-          © 2026 FARHAN TANVIR. ALL RIGHTS RESERVED.
+          © 2026 Farhan Tanvir. All rights reserved.
         </div>
-        <div class="footer-social-links">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
-          <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-link">Twitter/X</a>
-          <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="social-link">Dribbble</a>
+        <div class="footer-attribution">
+          Designed &amp; built with care.
         </div>
-        <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top of page">
-          Back to Top ↑
-        </button>
       </div>
     </div>
   </footer>
